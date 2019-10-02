@@ -123,7 +123,7 @@ Object detection is one of the most important application of deep learning in re
     </tr> 
     <tr>
         <td>Learning Rate</td>
-        <td>0.001</td>
+        <td>0.001( To avoid overshooting in the complex objective function minima )</td>
     </tr> 
     <tr>
         <td>Batch Size</td>
@@ -131,11 +131,11 @@ Object detection is one of the most important application of deep learning in re
     </tr> 
     <tr>
         <td>Steps per epoch</td>
-        <td>23</td>
+        <td>68</td>
     </tr> 
     <tr>
         <td>Time per epoch step</td>
-        <td>-</td>
+        <td>0.25s/step</td>
     </tr> 
     <tr>
         <td>Epochs</td>
@@ -143,7 +143,7 @@ Object detection is one of the most important application of deep learning in re
     </tr> 
     <tr>
         <td>Time per Epoch</td>
-        <td>-</td>
+        <td>17s/epoch</td>
     </tr> 
     <tr>
         <td></td>
@@ -151,19 +151,18 @@ Object detection is one of the most important application of deep learning in re
     </tr> 
     <tr>
         <td>Loss Function</td>
-        <td>YOLOv2 loss function</td>
+        <td>YOLOv3 loss function</td>
     </tr> 
     <tr>
         <td>Average Loss</td>
-        <td>0.50132</td>
+        <td>0.6</td>
     </tr> 
     <tr>
         <td>Loss</td>
-        <td>0.4702</td>
+        <td>0.5</td>
     </tr> 
       
 </table>
-
 # Introduction Of Files Contained In The Repository
 -yolo_v3.py - This python file contains the code of the model
 -yolov3.weights - This file contains the weights used in the model.
